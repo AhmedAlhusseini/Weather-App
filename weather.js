@@ -9,7 +9,7 @@ function getWeather() {
   if (city != "") {
     $.ajax({
       url:
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
         "&units=metric" +
         "&appid=23f933d3c08609b1b884444b9766a3d9",
@@ -37,7 +37,7 @@ function showResults(data) {
     "<h3 style='padding-left:40px;'><strong>الطقس</strong>: " +
     data.weather[0].main +
     "</h3>" +
-    "<h3 style='padding-left:40px;'><strong>الوصف</strong>:<img src='http://openweathermap.org/img/w/" +
+    "<h3 style='padding-left:40px;'><strong>الوصف</strong>:<img src='https://openweathermap.org/img/w/" +
     data.weather[0].icon +
     ".png'> " +
     data.weather[0].description +
